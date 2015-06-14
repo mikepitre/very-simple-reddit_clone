@@ -23,6 +23,7 @@ class LinksController < ApplicationController
   def edit
     authenticate_user!
     @link = Link.find(params[:id])
+    @all_users = User.select_users
   end
 
   # POST /links
