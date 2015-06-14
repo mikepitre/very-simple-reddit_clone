@@ -55,3 +55,5 @@ group :development, :test do
 end
 
 gem 'bootstrap-sass'
+
+gem 'acts_as_votable'

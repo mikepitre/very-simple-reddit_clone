@@ -10,6 +10,7 @@ class VotesController < ApplicationController
   # GET /votes/1
   # GET /votes/1.json
   def show
+    @votes = Vote.all
   end
 
   # GET /votes/new

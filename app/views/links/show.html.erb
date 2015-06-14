@@ -15,5 +15,9 @@
   <%= @link.user.name %>
 </p>
 
+<p><%= link_to "upvotes:", { controller: "votes", action: "create", vote: { user_id: session[:user_id], link_id: @link.id } }, method: "post" %>  <%= @link.votes.count %></p>
+
+<p><%= link_to "downvotes:", { controller: "votes", action: "create", vote: { user_id: session[:user_id], link_id: @link.id } }, method: "post" %>  <%= @link.votes.count %></p>
+
 <%= link_to 'Edit', edit_link_path(@link) %> |
 <%= link_to 'Back', links_path %>
