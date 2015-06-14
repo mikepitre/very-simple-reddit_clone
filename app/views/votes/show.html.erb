@@ -12,13 +12,15 @@
 
 <p>
   <strong>Link:</strong>
-  <%= @vote.link %>
+  <%= @vote.link.title %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @vote.user %>
+  <%= @vote.user.name %>
 </p>
+
+<p><%= link_to 'Vote for this Link', new_vote_path %></p>
 
 <%= link_to 'Edit', edit_vote_path(@vote) %> |
 <%= link_to 'Back', votes_path %>

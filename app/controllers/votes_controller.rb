@@ -7,6 +7,12 @@ class VotesController < ApplicationController
     @votes = Vote.all
   end
 
+  def upvote
+  end
+
+  def downvote
+  end
+
   # GET /votes/1
   # GET /votes/1.json
   def show
@@ -16,10 +22,14 @@ class VotesController < ApplicationController
   # GET /votes/new
   def new
     @vote = Vote.new
+    @all_users = User.select_users
+    @all_links = Link.select_links
   end
 
   # GET /votes/1/edit
   def edit
+    @all_users = User.select_users
+    @all_links = Link.select_links
   end
 
   # POST /votes
