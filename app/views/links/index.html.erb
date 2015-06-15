@@ -16,6 +16,7 @@
     <% @links.each do |link| %>
       <tr>
         <td><%= link.title %></td>
+
         <td><%= link.body %></td>
         <td><%= link.user.name %></td>
         <td><%= link_to 'Show', link %></td>
