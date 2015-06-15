@@ -1,3 +1,24 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 //You need to now manually import every other scss file.
+
+
+
+h5 {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+.sed {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.title {
+  padding-left: 25px;
+}
+
+
