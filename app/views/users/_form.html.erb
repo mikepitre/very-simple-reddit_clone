@@ -11,23 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field col-sm-8 col-sm-offset-4">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="field col-sm-8 col-sm-offset-4">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-  <div class="field">
+  <div class="field col-sm-8 col-sm-offset-4">
     <%= f.label :password %><br>
     <%= f.password_field :password %>
   </div>
-  <div class="field">
+  <div class="field col-sm-8 col-sm-offset-4">
     <%= f.label :password_confirmation %><br>
     <%= f.password_field :password_confirmation %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions col-sm-2 col-sm-offset-4 submit">
+    <%= f.submit "submit", class: "btn btn-primary" %>
   </div>
 <% end %>
