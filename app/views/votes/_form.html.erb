@@ -11,23 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field col-sm-8 col-sm-offset-4">
     <%= f.label :upvote %><br>
     <%= f.number_field :upvote %>
   </div>
-  <div class="field">
+  <div class="field col-sm-8 col-sm-offset-4">
     <%= f.label :downvote %><br>
     <%= f.number_field :downvote %>
   </div>
-  <div class="field">
-    <%= f.label :link_id %><br>
+  <div class="field col-sm-8 col-sm-offset-4">
+    <%= f.label :link_id, "Which link do you want to vote for?" %><br>
     <%= f.select :link_id, @all_links %>
   </div>
-  <!-- <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.select :user_id, @all_users %>
-  </div> -->
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions col-sm-2 col-sm-offset-4 submit">
+    <%= f.submit "submit", class: "btn btn-primary" %>
   </div>
 <% end %>
