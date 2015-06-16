@@ -42,4 +42,20 @@ table {
   margin: 20px 0;
 }
 
+li a {
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+li a:hover {
+  font-size: 120%;
+  text-decoration: none;
+}
 
+.navbar-brand {
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.navbar-brand:hover {
+  font-size: 160%;
+  text-decoration: none;
+}
