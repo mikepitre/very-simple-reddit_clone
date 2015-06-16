@@ -1,21 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @link.title %>
-</p>
+<h5 class="col-sm-8 col-sm-offset-2">
+  <%= @link.title %> by <%= @link.user.name %>
+</h5>
 
-<p>
-  <strong>Body:</strong>
+<p class="col-sm-8 col-sm-offset-2">
   <%= @link.body %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @link.user.name %>
-</p>
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2 sed">
+    <p><%= link_to 'Vote', new_vote_path %></p>
+  </div>
+</div>
 
-<p><%= link_to 'Vote', new_vote_path %></p>
-
-<%= link_to 'Edit', edit_link_path(@link) %> |
-<%= link_to 'Back', links_path %>
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2 sed">
+    <%= link_to 'Edit', edit_link_path(@link) %> |
+    <%= link_to 'Back', links_path %>
+  </div>
+</div>
