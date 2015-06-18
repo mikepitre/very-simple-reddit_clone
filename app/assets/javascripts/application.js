@@ -1,3 +1,6 @@
+/* global $ */
+'use strict';
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -15,3 +18,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function () {
+  $('h5').on('click', function () {
+    $('.actions').slideToggle();
+  });
+});
