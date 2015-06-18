@@ -21,6 +21,6 @@
 
 $(document).ready(function () {
   $('h5').on('click', function () {
-    $('.actions').slideToggle();
+    $('.link-options').slideToggle();
   });
 });

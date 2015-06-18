@@ -9,7 +9,7 @@
         <h5 class="col-sm-8 col-sm-offset-2"><%= link.title %> by <%= link.user.name %></h5>
         <p class="col-sm-8 col-sm-offset-2"><%= link.body %></p>
         <div class="row">
-          <div class="col-sm-4 col-sm-offset-2 sed actions">
+          <div class="col-sm-4 col-sm-offset-2 sed link-options">
             <%= link_to 'Show', link %>
             <%= link_to 'Edit', edit_link_path(link) %>
             <%= link_to 'Delete', link, method: :delete, data: { confirm: 'Are you sure?' } %>
